@@ -7,7 +7,7 @@ set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Werror -Wall")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Werror -Wall")
 
 find_package(PkgConfig)
-project(gstcalib)
+project(cvfilter)
 
 #pkg_check_modules(OPENCV REQUIRED opencv>=${OPENCV_REQUIRED})
 pkg_check_modules (GSTREAMER gstreamer-1.0 gstreamer-base-1.0 gstreamer-video-1.0)
