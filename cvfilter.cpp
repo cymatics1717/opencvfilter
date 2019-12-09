@@ -11,7 +11,7 @@
 #include <opencv2/opencv.hpp>
 #include <memory>
 #include <chrono>
-#define PLUGIN_NAME "calib"
+#define PLUGIN_NAME "cvfilter"
 
 #define CVFILTER_LOCK(opencv_filter)   (g_rec_mutex_lock (&( (CVFilter *) opencv_filter)->priv->mutex))
 
@@ -38,6 +38,7 @@ struct _CVFilterPrivate {
 #define CHANNEL_NUM 3
 #define SRC1 "{I420, NV12, NV21, YV12, YUY2}"
 #define SRC2 "{BGR}"
+#define SRC0 "{JPEG}"
 #define SRC3 "{BGRA}"
 #define CAPS "video/x-raw,format=(string)YV12,framerate=(fraction)30/1"
 
